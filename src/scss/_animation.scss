@@ -1,0 +1,15 @@
+span.text-rotating:before{
+  animation: rotatingText 5s ease infinite;
+  content: 'Front-End developer';
+  font-size: 16px;
+  width: 150px;
+}
+
+@keyframes rotatingText {
+  0% { opacity: 0; content: 'Front-End developer'; }
+  49% { opacity: 1; content: 'Front-End developer'; }
+  50% { opacity: 0; }
+  51% { opacity: 0; content: 'Web Integrator'; }
+  99% { opacity: 1; content: 'Web Integrator'; }
+}
+
